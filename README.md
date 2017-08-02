@@ -1,2 +1,4 @@
 # SCR
-SCR
+South Central Railways is one of the four wings in Indian Railways, India, Where I got an excellent opportunity to develop a website with an internal application for SCR. Traditionally, SCR represents a training center for the newbies who just got selected to Indian Railways. Before our project, they used to print an application form and fill necessary details of individual and need to mail them to the SCR for further notification. This was a long and tedious job for the SCR employees to open each trainee packet and assign them to the classes. So, to overcome this problem, we are offered to develop a website where these trainees can just create an account, fill the application online, upload photos and necessary documents then they are done. This whole process can eradicate a two-month processing time and saves the time of SCR Employees. This project not only serves as a time-saving one but also serves as an online presence for South Central Railways where they can display training center syllabus, timings, notifications regarding classes, exams and results.  
+Environment: HTML, CSS, JavaScript, Adobe Dreamweaver IDE, XML, PHP, MySQL, Apache Tomcat
+
