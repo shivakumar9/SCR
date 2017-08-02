@@ -1,0 +1,43 @@
+#Main-banner {
+	width:930px;
+	height:250px;
+}
+
+.stepcarousel{
+	position: relative; /*leave this value alone*/
+	overflow: scroll; /*leave this value alone*/
+	width: 930px; /*Width of Carousel Viewer itself*/
+	height: 250px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+	float: left; /*leave this value alone*/
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+	margin:0px; /*margin around each panel*/
+	width: 930px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+.chromestyle {width: 100%; font:bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#FFF; }
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+.chromestyle ul{ border: 0px solid #BBB; width: 100%; /*background: url(chromebg.gif) center center repeat-x; /*THEME CHANGE HERE*/ padding: 0; margin: 0; text-align: center; /*set value to "left", "center", or "right"*/}
+
+.chromestyle ul li { display: inline; }
+
+.chromestyle ul li a{ float:left; font:bold 13px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; padding:9px 23px 11px; border-right:1px solid #0138c3;}
+
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+/*background: url(chromebg-over.gif) center center repeat-x; /*THEME CHANGE HERE*/ color:#fff; background-color:#ff4e00;
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+/* CSS Document */

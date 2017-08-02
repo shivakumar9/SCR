@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+	 
+        function reg()  
+        {
+          
+            var cnt=0;
+            for(var i=0;i<document.forms["form1"].length;i++)
+            { if(document.forms["form1"][i].value=="")
+            cnt++;
+            }
+            if(cnt!=0)
+            {
+              
+             document.forms["form1"].action="index.php";
+             }
+			 else
+            document.forms["form1"].action="index.php";
+                
+        }  
+
+	</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="375" height="240" border="0">
+    <tr>
+      <td height="21" colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="69"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Home" onclick="reg();" />
+        </div>
+        </label></td>
+      <td width="230">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2"><a href="reg.html"></a></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

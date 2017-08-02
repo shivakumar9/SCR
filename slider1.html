@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<SCRIPT TYPE="text/javascript">
+var message="Sorry, right-click has been disabled";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Gallery</title>
+<link href="pranay.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="slide/jquery.min.js"></script>
+
+<script type="text/javascript" src="slide/stepcarousel.js"></script>
+<script type="text/javascript">
+
+stepcarousel.setup({
+	galleryid: 'mygallery', //id of carousel DIV
+	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+	panelclass: 'panel', //class of panel DIVs each holding content
+	autostep: {enable:true, moveby:1, pause:3000},
+	panelbehavior: {speed:700, wraparound:true, wrapbehavior:'slide', persist:true},
+	defaultbuttons: {enable: true, moveby: 1, leftnav: ['slide/prev.png', 10, 160], rightnav: ['slide/next.png', -40, 160]},
+	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+	contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+})
+
+</script>
+<style type="text/css">
+#mygallery{overflow: hidden;}
+</style>
+<script type="text/javascript" src="slide/crawler.js">
+/* Text and/or Image Crawler Script v1.5 (c)2009-2011 John Davenport Scheuer
+   as first seen in http://www.dynamicdrive.com/forums/
+   username: jscheuer1 - This Notice Must Remain for Legal Use
+   updated: 4/2011 for random order option, more (see below)
+*/
+</script><style type="text/css">.marquee{white-space:nowrap;overflow:hidden;visibility:hidden;}#marq_kill_marg_bord{border:none!important;margin:0!important;}</style>
+</head>
+<body>
+<div id="Main-banner">
+<div id="mygallery" class="stepcarousel">
+<div class="belt">
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide01.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 952px;"><img src="slide/slide02.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 2856px;"><img src="slide/slide03.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide04.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide05.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide06.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide07.jpg" width="952" height="393" alt="Slide"></div>
+<div class="panel" style="float: none; position: absolute; left: 0px;"><img src="slide/slide08.jpg" width="952" height="393" alt="Slide"></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
