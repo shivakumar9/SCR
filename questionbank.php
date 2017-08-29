@@ -121,9 +121,9 @@ $(document).ready(function(){
   <?php
             include("personal_db.inc");
             $sql="select * from  exam_materials"  ;
-$data=mysql_query($sql);
+$data=mysqli_query($con,$sql);
 	echo "<table width='100%'>";
-while($res=mysql_fetch_array($data))
+while($res=mysqli_fetch_array($data))
 {
 $text=$res['img'];
 $title=$res['subject'];

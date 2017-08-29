@@ -13,8 +13,8 @@
 
  include("personal_db.inc");
             $sql="select * from  examination"  ;
-$data=mysql_query($sql);
-while($res=mysql_fetch_array($data))
+$data=mysqli_query($con,$sql);
+while($res=mysqli_fetch_array($data))
 {
 $text=$res['img1'];
 $title=$res['subject'];
@@ -32,8 +32,8 @@ echo"<tr><td width='80%'><a href='notices_new.php' target='notices_new.php'>$tit
 
 
 $sql2="select * from evnt_title where status='active' ";
-$res2=mysql_query($sql2);
-while($row2=mysql_fetch_array($res2))
+$res2=mysqli_query($con,$sql2);
+while($row2=mysqli_fetch_array($res2))
 {
 $event_name=$row2['event_name'];
 $date=$row2['date'];
@@ -45,8 +45,8 @@ echo "<tr><td><a href='evnt_pht.php?date=$date' target='evnt_pht.php?date=$date'
 
 
 $sql2="select * from infra_title where status='active' ";
-$res2=mysql_query($sql2);
-while($row2=mysql_fetch_array($res2))
+$res2=mysqli_query($con,$sql2);
+while($row2=mysqli_fetch_array($res2))
 {
 $event_name=$row2['event_name'];
 $date=$row2['date'];

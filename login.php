@@ -76,8 +76,8 @@ $(document).ready(function(){
 <body id="home" bgcolor="<?php
             include("personal_db.inc");
             $sql="select * from  bgcolor_db  where status='active' "  ;
-$data=mysql_query($sql);
-$res=mysql_fetch_array($data);
+$data=mysqli_query($con,$sql);
+$res=mysqli_fetch_array($data);
 $color=$res['color_code'];
 echo "$color";
    

@@ -9,17 +9,17 @@
 <?php
   include("personal_db.inc");
 $sql1="select * from  course_cal where month='Apr'"  ;
-$data1=mysql_query($sql1);
-$count=mysql_num_rows($data1);
+$data1=mysqli_query($con,$sql1);
+$count=mysqli_num_rows($data1);
 if($count!=0)
 {
 		echo"<marquee behavior='scroll' width='100%' height='138px'  direction='up' onmouseover='this.stop();' onmouseout='this.start();'><table width='100%' border='0' cellpadding='0' cellspacing='0' >";
 
 	{
 	$sql1="select * from  course_cal where month='Apr' order by sr_no desc";
-	$data=mysql_query($sql1);
+	$data=mysqli_query($con,$sql1);
 	
-	while($row=mysql_fetch_array($data))
+	while($row=mysqli_fetch_array($data))
 		{
 		 $forward=$row['course_n'];
 		 echo "<tr>";		 

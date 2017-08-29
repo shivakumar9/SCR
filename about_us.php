@@ -181,9 +181,9 @@ $(document).ready(function(){
       <td colspan="4"><?php
             include("personal_db.inc");
             $sql="select * from  aboutus where status='active'"  ;
-$data=mysql_query($sql);
+$data=mysqli_query($con,$sql);
 	echo "<table width='100%'>";
-while($res=mysql_fetch_array($data))
+while($res=mysqli_fetch_array($data))
 {
 $text=$res['aboutus_text'];
 $title=$res['aboutus_title'];

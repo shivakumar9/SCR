@@ -78,10 +78,10 @@ $pwd=$_POST['password'];
 
 
 $sql="select * from users where email='$uname' AND Psw='$pwd'";
-$result=mysql_query($sql);
+$result=mysqli_query($con,$sql);
 //echo $sql;
-$count=mysql_num_rows($result);
-$row=mysql_fetch_array($result);
+$count=mysqli_num_rows($result);
+$row=mysqli_fetch_array($result);
 $status=$row['status'];
 $idlen=strlen($uname);
 $passlen=strlen($pwd);

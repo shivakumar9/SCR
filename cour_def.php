@@ -90,9 +90,9 @@
     <td colspan="5"><?php
             include("personal_db.inc");
             $sql="select * from  courses where status='active'"  ;
-$data=mysql_query($sql);
+$data=mysqli_query($con,$sql);
 	echo "<table width='100%'>";
-while($res=mysql_fetch_array($data))
+while($res=mysqli_fetch_array($data))
 {
 $text=$res['course_text'];
 $title=$res['course_name'];
